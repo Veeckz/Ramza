@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Renta RAMZA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="ramstyle.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+    
+</head>
+    <body>
+
+        
+
+
+        <header>
+            <div class="contenedor">
+            <img src="Imgs/RENTAMA%20Chid3.png" width="117px" height="50px">
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu" for="menu-bar"></label>
+                <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+        <section id="banner">
+            <img src="Imgs/volu2.jpg">
+            <div class="contenedor"><h2>Tenemos todo para que la pases bien!</h2>
+            <p>Servicios para tu Fiesta</p>
+            <a href="#">Leer 
+            mas...</a>
+            </div>
+            </section>
+            <section id="Bienvenidos">
+                <h2>Bienvenidos a Rentas RAMZA</h2><p>Rentas RAMZA, los mejores servicios para tus fiestas, desde mesas hasta rockolas, 15 años prestando los mejores servicios para los mejores eventos.</p><p>Somos una empresa familiar dedicada a la renta de mobiliario para fiestas brindando as&iacute; el mejor servicio para nuestros clientes.</p>
+            </section>
+            <section id="blog">
+            <h3>Lo ultimo en nuestro Blog</h3>
+                <div class="contenedor">
+                    
+                    <article>
+                        <img src="Imgs/mision2.png">
+                        <h4>MISI&Oacute;N</h4>
+                        <p>Ofrecer el mejor servicio al cliente entregando mobiliario en buenas condiciones en tiempo y forma. Además ofrecer el mejor costo y promociones en diferentes paquetes de nuestro producto en toda la región.</p>
+                    </article>
+                    <article>
+                    <img src="Imgs/vision2.png">
+                        <h4>VISI&Oacute;N</h4>
+                        <p>Ser una empresa reconocida por nuestro trabajo en todo Irapuato y contar con mayor variedad en modelos de mobiliario y mayor n&uacute;mero de rentas en toda la ciudad. </p>
+                    </article>
+                    <article>
+                    <img src="Imgs/valores2.png">
+                <h4>VALORES</h4>
+                        <p>•	Respeto
+•	Confianza
+•	Trabajo en Equipo
+•	Calidad
+•	Responsabilidad
+•	Sinceridad
+•	Igualdad
+•	Honestidad
+</p>
+                    </article>
+                    <article>
+            <img src="organigrama.jpg" input type="image"   onclick="MeShowMod('organigrama.html')">
+                <h4>ORGANIGRAMA</h4>
+                    </article>
+                    <article>
+                    <img src="politicas.jpg" input type="image"  onclick="MeShowMod('politicas.html')">
+                <h4>POL&Iacute;TICAS</h4>
+                    </article>
+                </div>
+            </section>
+        <div class="modal fade" id="ModalOrg" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">             
+                    <div id="ContenidoModal"></div>
+                </div>
+            </div>
+        </div>
+            
+            <section id="info">
+            <h3>Para todos los eventos contamos con Servicios para tus gustos.</h3>
+                <div class="contenedor">
+                <div class="info-ser"><img src="Imgs/rock2.jpg"> <h4>ROCKOLAS</h4>
+                </div>
+                <div class="info-ser"><img src="Imgs/infla1.jpg">
+                <h4>INFLABLES</h4>
+                </div>
+                <div class="info-ser"><img src="Imgs/sillas2.jpg">
+                <h4>MESAS</h4>
+                </div>
+                <div class="info-ser"><img src="Imgs/Mesa2.jpg">
+              <h4>SILLAS</h4>
+                </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+        <div class="contenedor">
+            <p class="copy">Servicios &copy;2017</p>
+            <div class="sociales"></div>
+            </div>
+        </footer>
+
+<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+        <script type="text/javascript">
+
+
+    function MeShowMod(pagina)
+    {
+        $("#ModalOrg").modal("show");
+        $("#ContenidoModal").load(pagina);
+
+    }
+
+    function MeHideMod()
+    {
+
+        $("#ModalOrg").modal("hide");
+    }
+
+    </script>
+
+
+    </body>
+</html>
